@@ -12,7 +12,7 @@
 	--accent-color: #2196f3;
 	--primary-white-color: #ffffff;
 	--secondary-white-color: #f5f4fa;
-	--cubic-bezier-time: 2500ms;
+	--cubic-bezier-time: 250ms;
 }
 
 html {
@@ -145,7 +145,7 @@ body {
 	letter-spacing: 0.02em;
 	text-decoration: none;
 
-	transition: all var(--cubic-bezier-time) cubic-bezier(0.4, 0, 0.2, 1);
+	transition: color var(--cubic-bezier-time) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav .nav-link:hover,
