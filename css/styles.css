@@ -12,7 +12,7 @@
 	--accent-color: #2196f3;
 	--primary-white-color: #ffffff;
 	--secondary-white-color: #f5f4fa;
-	--cubic-bezier-time: 250ms;
+	--cubic-bezier-time: 2500ms;
 }
 
 html {
@@ -479,22 +479,25 @@ body {
 	height: 44px;
 	background-color: var(--primary-white-color);
 	border-radius: 50%;
-	transition: all var(--cubic-bezier-time) cubic-bezier(0.4, 0, 0.2, 1);
+	transition: background-color var(--cubic-bezier-time) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover,
 .social-link:focus {
 	background-color: var(--accent-color);
-	--color1: var(--primary-white-color);
+	/*--color1: var(--primary-white-color);*/
 }
 
-.social-link-ico {
-	transition: all var(--cubic-bezier-time) cubic-bezier(0.4, 0, 0.2, 1);
+.social-link-icon {
+	fill: #afb1b8;
+	background-color: var(--primary-white-color);
+	transition: fill var(--cubic-bezier-time) cubic-bezier(0.4, 0, 0.2, 1),
+		background-color var(--cubic-bezier-time) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link-icon:hover,
 .social-link-icon:focus {
-	--color1: var(--primary-white-color);
+	fill: var(--primary-white-color);
 	background-color: var(--accent-color);
 }
 
@@ -525,23 +528,26 @@ body {
 	border: 1px solid #afb1b8;
 	border-radius: 4px;
 
-	transition: all var(--cubic-bezier-time) cubic-bezier(0.4, 0, 0.2, 1);
+	transition: background-color var(--cubic-bezier-time) cubic-bezier(0.4, 0, 0.2, 1),
+		border var(--cubic-bezier-time) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:hover,
 .clients-link:focus {
-	--color1: var(--accent-color);
+	fill: var(--accent-color);
 	background-color: var(--primary-white-color);
 	border: 1px solid var(--accent-color);
 }
 
 .clients-icon {
-	transition: all var(--cubic-bezier-time) cubic-bezier(0.4, 0, 0.2, 1);
+	fill: #afb1b8;
+	transition: fill var(--cubic-bezier-time) cubic-bezier(0.4, 0, 0.2, 1),
+		background-color var(--cubic-bezier-time) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-icon:hover,
 .clients-icon:focus {
-	--color1: var(--accent-color);
+	fill: var(--accent-color);
 	background-color: var(--primary-white-color);
 }
 
@@ -649,22 +655,24 @@ body {
 	background-color: rgba(255, 255, 255, 0.1);
 	border-radius: 50%;
 
-	transition: all var(--cubic-bezier-time) cubic-bezier(0.4, 0, 0.2, 1);
+	transition: background-color var(--cubic-bezier-time) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social:hover,
 .footer-social:focus {
 	background-color: var(--accent-color);
-	--color1: var(--primary-white-color);
+	fill: var(--primary-white-color);
 }
 
 .footer-link-icon {
-	transition: all var(--cubic-bezier-time) cubic-bezier(0.4, 0, 0.2, 1);
+	fill: var(--primary-white-color);
+	/*background-color: rgba(255, 255, 255, 0.1);*/
+	transition: background-color var(--cubic-bezier-time) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-link-icon:hover,
 .footer-link-icon:focus {
-	--color1: var(--primary-white-color);
+	fill: var(--primary-white-color);
 	background-color: var(--accent-color);
 }
 
