@@ -26,11 +26,18 @@ html {
 }
 
 /*Remove outline on the forms and links*/
-
+/*
 :hover,
 :focus {
 	outline: 0;
 	outline-offset: 0;
+}*/
+
+/*Устанавливает цвет аутлайна*/
+
+:hover,
+:focus {
+	outline-color: var(--accent-color);
 }
 
 .visually-hidden {
